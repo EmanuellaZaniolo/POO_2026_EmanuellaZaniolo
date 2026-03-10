@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ProdutoLista implements ProdutoDAO {
 
-    ArrayList produtos = new ArrayList<>();
+    ArrayList <Produto>produtos = new ArrayList<Produto>();
 
     public ArrayList<Produto> getProdutos() {
         return produtos;
@@ -15,17 +15,21 @@ public class ProdutoLista implements ProdutoDAO {
     }
 
     @Override
-    public ArrayList listar() {
+    public void listar(Produto prod) {
+        for (Produto prod2 : produtos) {
+            System.out.println(prod2);
+        }
+    }
+
+    @Override
+    public ArrayList add(Produto prod) {
+        this.produtos.add(prod);
         return produtos;
     }
 
     @Override
-    public ArrayList add() {
-        return produtos;
-    }
-
-    @Override
-    public ArrayList remove() {
+    public ArrayList remove(Produto prod) {
+        this.produtos.remove(prod);
         return produtos;
     }
 }
