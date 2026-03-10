@@ -1,17 +1,28 @@
 package Area;
 
 public class Quadrado implements Poligono {
+    private double lado;
+    
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+
+    public Quadrado(double lado) {
+        this.lado = lado;
+    }
 
     @Override
     public double calcularArea() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularArea'");
+        return lado*lado;
     }
 
     @Override
     public double calcularPerimetro() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularPerimetro'");
+        return 4*lado;
     }
     
 }
