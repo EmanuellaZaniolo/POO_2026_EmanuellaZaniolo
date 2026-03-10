@@ -1,7 +1,4 @@
-import Xadrez.Bispo;
-import Xadrez.Cavalo;
-import Xadrez.Peca;
-
+package Xadrez;
 public class Main {
     public static void main(String[] args) {
         Peca bispoBranco = new Bispo("branco");
