@@ -1,6 +1,11 @@
 package ExercicioDAO;
 
+import java.util.ArrayList;
+
 public interface ProdutoDAO {
-listaProd 
+ArrayList listar();
+ArrayList add(Produto);
+ArrayList remove();
+
     
 } 
