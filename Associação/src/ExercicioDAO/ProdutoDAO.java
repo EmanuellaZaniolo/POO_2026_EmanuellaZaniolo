@@ -1,11 +1,14 @@
 package ExercicioDAO;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ProdutoDAO {
-void listar(Produto prod);
-ArrayList add(Produto prod);
-ArrayList remove(Produto prod);
 
-    
-} 
+    void inserir(Produto produto);
+
+    List<Produto> listar();
+
+    Produto buscarPorId(String codigo);
+
+    void remover(String codigo);
+}

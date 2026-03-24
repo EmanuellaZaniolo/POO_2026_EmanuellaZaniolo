@@ -1,35 +1,34 @@
 package ExercicioDAO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ProdutoLista implements ProdutoDAO {
 
-    ArrayList <Produto>produtos = new ArrayList<Produto>();
+    private List<Produto> produtos = new ArrayList<>();
 
-    public ArrayList<Produto> getProdutos() {
-        return produtos;
-    }
-
-    public void setProdutos(ArrayList<Produto> produtos) {
-        this.produtos = produtos;
+    @Override
+    public void inserir(Produto produto) {
+        produtos.add(produto);
     }
 
     @Override
-    public void listar(Produto prod) {
-        for (Produto prod2 : produtos) {
-            System.out.println(prod2);
+    public List<Produto> listar() {
+        return produtos;
+    }
+
+    @Override
+    public Produto buscarPorId(String codigo) {
+        for (Produto p : produtos) {
+            if (p.getCodigo().equals(codigo)) {
+                return p;
+            }
         }
+        return null;
     }
 
     @Override
-    public ArrayList add(Produto prod) {
-        this.produtos.add(prod);
-        return produtos;
-    }
-
-    @Override
-    public ArrayList remove(Produto prod) {
-        this.produtos.remove(prod);
-        return produtos;
+    public void remover(String codigo) {
+        produtos.removeIf(p -> p.getCodigo().equals(codigo));
     }
 }
