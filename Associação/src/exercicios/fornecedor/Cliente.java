@@ -1,4 +1,4 @@
-package fornecedor;
+package exercicios.fornecedor;
 
 import java.util.ArrayList;
 import java.util.List;

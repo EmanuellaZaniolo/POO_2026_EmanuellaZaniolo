@@ -1,4 +1,4 @@
-package uber;
+package exercicios.uber;
 
 import java.util.ArrayList;
 import java.util.List;

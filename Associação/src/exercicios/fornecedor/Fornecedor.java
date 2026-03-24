@@ -1,4 +1,4 @@
-package fornecedor;
+package exercicios.fornecedor;
 
 public class Fornecedor {
 

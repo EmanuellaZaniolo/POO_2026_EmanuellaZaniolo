@@ -1,4 +1,4 @@
-package Streaming;
+package exercicios.Streaming;
 
 public abstract class Conteudo {
 

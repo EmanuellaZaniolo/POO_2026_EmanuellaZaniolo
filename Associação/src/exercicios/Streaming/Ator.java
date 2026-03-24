@@ -1,10 +1,9 @@
-
-package Streaming;
-public class Diretor {
+package exercicios.Streaming;
+public class Ator {
 
     private String nome;
 
-    public Diretor(String nome) {
+    public Ator(String nome) {
         this.nome = nome;
     }
 

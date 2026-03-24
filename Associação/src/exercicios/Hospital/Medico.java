@@ -1,4 +1,4 @@
-package Hospital;
+package exercicios.Hospital;
 
 public class Medico {
 

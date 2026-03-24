@@ -1,4 +1,4 @@
-package uber;
+package exercicios.uber;
 
 public class Pagamento {
 

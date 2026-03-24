@@ -1,4 +1,4 @@
-package fornecedor;
+package exercicios.fornecedor;
 import java.util.Scanner;
 
 public class Main {

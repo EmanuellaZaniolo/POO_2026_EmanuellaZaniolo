@@ -1,4 +1,4 @@
-package Hospital;
+package exercicios.Hospital;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Streaming;
+package exercicios.Streaming;
 import java.util.ArrayList;
 import java.util.List;
 
