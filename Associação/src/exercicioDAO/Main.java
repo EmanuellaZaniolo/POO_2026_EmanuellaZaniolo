@@ -1,4 +1,4 @@
-package ExercicioDAO;
+package exercicioDAO;
 
 public class Main {
     public static void main(String[] args) {

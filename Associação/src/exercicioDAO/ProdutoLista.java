@@ -1,4 +1,4 @@
-package ExercicioDAO;
+package exercicioDAO;
 
 import java.util.ArrayList;
 import java.util.List;
